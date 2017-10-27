@@ -1,0 +1,27 @@
+{
+  "name": "rollup-plugin-mcss",
+  "version": "0.0.1",
+  "description": "rollup plugin for mcss",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcarim5efil/rollup-plugin-mcss.git"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "mcss"
+  ],
+  "author": "elcarim5efil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elcarim5efil/rollup-plugin-mcss/issues"
+  },
+  "homepage": "https://github.com/elcarim5efil/rollup-plugin-mcss#readme",
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "mcss": "^0.5.1",
+    "rollup-pluginutils": "^2.0.1"
+  }
+}
