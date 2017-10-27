@@ -12,7 +12,7 @@ mcss({
 
   output: true,                 // default, bundle.css will be ouput to the same path as bundle.js
 
-  output: 'dist/bundle.css',    // output to the path relative to current working directory
+  output: './dist/bundle.css',    // output to the path relative to current working directory
 
   output: false,                // transpiled css code will be exported as 'export default ${cssCode}'
 });
