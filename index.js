@@ -12,6 +12,8 @@ module.exports = function plugin(options = {}) {
   const styles = [];
 
   const output = options.output === undefined ? true : options.output;
+  const transpileOnly = options.transpileOnly === undefined ? false : options.transpileOnly;
+
   return {
     name: 'mcss',
     transform(code, id) {
@@ -33,11 +35,13 @@ module.exports = function plugin(options = {}) {
 
           if (output) {
             code = '""';
+          } else if (transpileOnly) {
+            code = css.toString();
           } else {
-            code = css;
+            code = `export default ${css.toString()}`;
           }
           resolve({
-            code: `export default ${code};`,
+            code,
             mappings: ''
           });
         }).fail((err) => {
